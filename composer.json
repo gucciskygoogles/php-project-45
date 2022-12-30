@@ -1,0 +1,16 @@
+{
+    "name": "hexlet/code",
+    "description": "First project on Hexlet education platform",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gucciskygoogles",
+            "email": "iwillloveyou44@yandex.ru"
+        }
+    ],
+    "require": {}
+}
