@@ -34,7 +34,6 @@ function game()
         {
             $countOfCorrectAnswers++;
             $number = getRandomNum();
-            continue;
         }
         else break;
     }
