@@ -4,7 +4,8 @@
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
-        }
+        },
+        "files": ["src/Cli.php"]
     },
     "authors": [
         {
@@ -12,8 +13,13 @@
             "email": "iwillloveyou44@yandex.ru"
         }
     ],
-    "require": {},
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.16"
+    },
     "bin": [
         "bin/brain-games"
-    ]
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.2"
+    }
 }
