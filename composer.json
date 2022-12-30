@@ -12,5 +12,8 @@
             "email": "iwillloveyou44@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
 }
