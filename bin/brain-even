@@ -2,9 +2,7 @@
 
 <?php
 
-use function BrainGames\Cli\greetings as greet;
-use function cli\line;
-use function cli\prompt;
+use function BrainGames\IsEven\game;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 
@@ -14,62 +12,6 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath1;
 } else {
     require_once $autoloadPath2;
-}
-
-
-function game()
-{
-    $countOfCorrectAnswers = 0;
-    $number = getRandomNum();
-
-    $name = greet();
-    line('Answer "yes" if the number is even, otherwise answer "no".');
-
-    while ($countOfCorrectAnswers !== 3)
-    {
-        line("Question: %s", $number);
-        $answer = prompt("Your answer");
-
-        if (isResultOfQuestionCorrect($number, $answer, $name))
-        {
-            $countOfCorrectAnswers++;
-            $number = getRandomNum();
-        }
-        else break;
-    }
-
-    if ($countOfCorrectAnswers === 3)
-    {
-        line("Congratulations, %s!", $name);
-    }
-}
-
-function isResultOfQuestionCorrect($num, $answer, $name): bool
-{
-    if ($num % 2 === 0 && $answer === "yes" || $num % 2 !== 0 && $answer === "no")
-    {
-        line("Correct!");
-        return true;
-    }
-    else
-    {
-        if ($answer === "no")
-        {
-            line("'no' is wrong answer ;(. Correct answer was 'yes'.");
-        }
-        else
-        {
-            line("'yes' is wrong answer ;(. Correct answer was 'no'.");
-        }
-
-        line("Let's try again, %s!", $name);
-        return false;
-    }
-}
-
-function getRandomNum()
-{
-    return rand(0, 100);
 }
 
 game();
