@@ -10,7 +10,8 @@
             "src/Games/IsEven.php",
             "src/Games/Calc.php",
             "src/Helper.php",
-            "src/Engine.php"
+            "src/Engine.php",
+            "src/Games/NOD.php"
         ]
     },
     "authors": [
@@ -20,14 +21,12 @@
         }
     ],
     "require": {
-        "wp-cli/php-cli-tools": "^0.11.16"
+        "wp-cli/php-cli-tools": "^0.11.16",
+        "ext-gmp": "*"
     },
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc"
-    ],
-    "require-dev": {
-        "squizlabs/php_codesniffer": "^2.2"
-    }
+    ]
 }
