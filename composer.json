@@ -7,9 +7,10 @@
         },
         "files": [
             "src/Cli.php",
-            "src/IsEven.php",
-            "src/Calc.php",
-            "src/Helper.php"
+            "src/Games/IsEven.php",
+            "src/Games/Calc.php",
+            "src/Helper.php",
+            "src/Engine.php"
         ]
     },
     "authors": [

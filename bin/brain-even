@@ -2,7 +2,7 @@
 
 <?php
 
-use function BrainGames\IsEven\game;
+use function BrainGames\Games\IsEven\game;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 

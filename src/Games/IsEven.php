@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\IsEven;
+namespace BrainGames\Games\IsEven;
 
 use function BrainGames\Cli\greetings as greet;
 use function BrainGames\Helper\getRandomNum;

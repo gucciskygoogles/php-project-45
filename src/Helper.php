@@ -12,3 +12,4 @@ function getRandomOperation()
     $operations = ["+", "-", "*"];
     return $operations[rand(0, 2)];
 }
+
