@@ -3,6 +3,7 @@
 namespace BrainGames\IsEven;
 
 use function BrainGames\Cli\greetings as greet;
+use function BrainGames\Helper\getRandomNum;
 use function cli\line;
 use function cli\prompt;
 
@@ -69,7 +70,3 @@ function isResultOfQuestionCorrect($num, $answer, $name): bool
 
 }
 
-function getRandomNum()
-{
-    return rand(0, 100);
-}
