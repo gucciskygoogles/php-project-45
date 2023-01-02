@@ -11,7 +11,8 @@
             "src/Games/Calc.php",
             "src/Helper.php",
             "src/Engine.php",
-            "src/Games/NOD.php"
+            "src/Games/NOD.php",
+            "src/Games/Progression.php"
         ]
     },
     "authors": [
